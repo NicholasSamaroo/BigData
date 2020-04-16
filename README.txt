@@ -9,14 +9,14 @@ INSTRUCTIONS FOR RUNNING QUERY 1
 	db.createCollection("nodes")
 	db.createCollection("edges")
 
-- In order to import the data, run these two import statements separately in your system terminal (Command Prompt- Windows, Terminal- Mac) where nodes.tsv and edges.tsv are located
+- In order to import the data, run these two import statements separately in your system terminal (Command Prompt- Windows, Terminal- Mac) where nodes.tsv and edges.tsv are located. NOTE: edges_test.tsv and nodes_test.tsv were used as new test data files to make sure the program ran on new data; change the file path to the respective test files if you wish to run the query on those.
 	mongoimport -d hetionet -c nodes --type tsv --file FILE_PATH_OF_nodes.tsv --headerline
 	mongoimport -d hetionet -c edges --type tsv --file FILE_PATH_OF_edges.tsv --headerline 
 
 - After the data has been loaded in, follow these instructions to run the program:
 	In your system terminal, cd into into the folder with our files, then run:
 	python HetioNet.py "DISEASE_NAME" 
-		IMPORTANT - DISEASE_NAME must be enclosed in " " and must also be a valid disease name found in the nodes.tsv file
+		IMPORTANT - DISEASE_NAME must be enclosed in " " and must also be a valid disease name found in the nodes.tsv file or nodes_test.tsv
 
 
 	
