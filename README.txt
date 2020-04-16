@@ -1,6 +1,7 @@
 INSTRUCTIONS FOR RUNNING QUERY 1
 
 - Go to https://www.mongodb.com/download-center/community and download MongoDB for your system
+- Make sure you also have PyMongo installed on your system. Instructions can be found here: https://api.mongodb.com/python/current/installation.html
 
 - Find your MongoDB folder and open mongo.exe. In my case, the path would be C:\Program Files\MongoDB\Server\4.2\bin\mongo.exe
 - In the mongo.exe terminal run each command separately:
