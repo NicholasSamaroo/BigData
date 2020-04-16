@@ -4,8 +4,8 @@ from pymongo import MongoClient
 client = MongoClient('localhost', 27017)
 db = client["hetionet"]
 
-nodeCollection = db["nodes_test"]
-edgesCollection = db["edges_test"]
+nodeCollection = db["nodes"]
+edgesCollection = db["edges"]
 
 disease = str(sys.argv[1])
 diseaseDocument = nodeCollection.find_one( {"name": disease})
