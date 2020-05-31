@@ -12,7 +12,7 @@ Given a DISEASE, this file returns to you: it's name, COMPOUND names that can tr
 	db.createCollection("nodes")
 	db.createCollection("edges")
 
-- In order to import the data, run these two import statements separately in your system terminal (Command Prompt- Windows, Terminal- Mac) where nodes.tsv and edges.tsv are located. NOTE: edges_test.tsv and nodes_test.tsv were used as new test data files to make sure the program ran on new data; change the file path to the respective test files if you wish to run the query on those.
+- In order to import the data, run these two import statements separately in your system terminal (Command Prompt- Windows, Terminal- Mac) where nodes.tsv and edges.tsv are located. NOTE: 	edges_test.tsv and nodes_test.tsv were used as new test data files to make sure the program ran on new data; change the file path to the respective test files if you wish to run the 	query on those.
 	mongoimport -d hetionet -c nodes --type tsv --file 'FILE_PATH_OF_nodes.tsv' --headerline
 	mongoimport -d hetionet -c edges --type tsv --file 'FILE_PATH_OF_edges.tsv' --headerline 
 
@@ -29,7 +29,7 @@ This file returns to you all the COMPOUNDS that can treat a DISEASE. A COMPOUND 
 - The data from either nodes.tsv and edges.tsv or nodes_test.tsv and edges_test.tsv should be loaded into your local MongoDB if you are following from Query 1. If not, see Query 1 for how to import the data into MongoDB
 
 - After you resolve the dependencies and your data is loaded in, follow these instructions to run the query:
-	- CD into the folder that contains Query_2 and in the terminal type python Query_2 "DISEASE_NAME" where DISEASE_NAME must be enclosed in " " and must also be a valid disease name found in the nodes.tsv file or nodes_test.tsv file 
+	- CD into the folder that contains Query_2 and in the terminal type python Query_2 "DISEASE_NAME" where DISEASE_NAME must be enclosed in " " and must also be a valid disease name 	found in the nodes.tsv file or nodes_test.tsv file 
 
 
 	
