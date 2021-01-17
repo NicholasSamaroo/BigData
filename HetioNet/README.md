@@ -18,8 +18,8 @@ Given a DISEASE, this file returns to you: it's name, COMPOUND names that can tr
 
 - After the data has been loaded in, follow these instructions to run the program:
 	In your system terminal, cd into into the folder with our files, then run:
-	python HetioNet.py "DISEASE_NAME" 
-		IMPORTANT - DISEASE_NAME must be enclosed in " " and must also be a valid disease name found in the nodes.tsv file or nodes_test.tsv
+	-python HetioNet.py "DISEASE_NAME" 
+		- IMPORTANT - DISEASE_NAME must be enclosed in " " and must also be a valid disease name found in the nodes.tsv file or nodes_test.tsv
 
 **INTRUCTIONS FOR RUNNING QUERY 2**
 ---------------------------------
@@ -30,4 +30,4 @@ This file returns to you all the COMPOUNDS that can treat a DISEASE. A COMPOUND 
 - The data from either nodes.tsv and edges.tsv or nodes_test.tsv and edges_test.tsv should be loaded into your local MongoDB if you are following from Query 1. If not, see Query 1 for how to import the data into MongoDB
 
 - After you resolve the dependencies and your data is loaded in, follow these instructions to run the query:
-	-CD into the folder that contains Query_2 and in the terminal type python Query_2 "DISEASE_NAME" where DISEASE_NAME must be enclosed in " " and must also be a valid disease name found in the nodes.tsv file or nodes_test.tsv file 
+	- CD into the folder that contains Query_2 and in the terminal type python Query_2 "DISEASE_NAME" where DISEASE_NAME must be enclosed in " " and must also be a valid disease name found in the nodes.tsv file or nodes_test.tsv file 
