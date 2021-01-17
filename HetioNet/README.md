@@ -17,14 +17,14 @@ Given a DISEASE, this file returns to you: it's name, COMPOUND names that can tr
 	- mongoimport -d hetionet -c edges --type tsv --file 'FILE_PATH_OF_edges.tsv' --headerline 
 
 - After the data has been loaded in, follow these instructions to run the program:
-	In your system terminal, cd into into the folder with our files, then run:
-	-python HetioNet.py "DISEASE_NAME" 
+	- In your system terminal, cd into into the folder with our files, then run:
+	- python HetioNet.py "DISEASE_NAME" 
 		- IMPORTANT - DISEASE_NAME must be enclosed in " " and must also be a valid disease name found in the nodes.tsv file or nodes_test.tsv
 
 **INTRUCTIONS FOR RUNNING QUERY 2**
 ---------------------------------
 
-This file returns to you all the COMPOUNDS that can treat a DISEASE. A COMPOUND can treat a DISEASE if the ANATOMY where the DISEASE occurs up-regulates / down-regulates a GENE and COMPOUNDS or SIMILAR COMPOUNDS up-regulate / down-regulate the same GENE in an opposite direction (e.g. Disease_x occurs at Anatomy_0 , Anatomy_0 up-regulates Gene_2 and Compound_4 down-regulates Gene_2 , therefore , Compound_4 is one compound that can treat Disease_x)
+This file returns to you all the COMPOUNDS that can treat a DISEASE. A COMPOUND can treat a DISEASE if the ANATOMY where the DISEASE occurs up-regulates / down-regulates a GENE and COMPOUNDS or SIMILAR COMPOUNDS up-regulate / down-regulate the same GENE in an opposite direction (e.g. Disease_x occurs at Anatomy_0 , Anatomy_0 up-regulates Gene_2 and Compound_4 down-regulates Gene_2, therefore, Compound_4 is one compound that can treat Disease_x)
 
 - You still need PyMongo and MongoDB installed on your system, see the beginning of Query 1 to find out how to download them
 - The data from either nodes.tsv and edges.tsv or nodes_test.tsv and edges_test.tsv should be loaded into your local MongoDB if you are following from Query 1. If not, see Query 1 for how to import the data into MongoDB
