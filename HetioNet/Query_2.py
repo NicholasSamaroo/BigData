@@ -105,7 +105,7 @@ for i in compoundGeneCUG:
 for i in compoundGeneCUGCOPY[0:]:
     for j in compoundGeneCUGCOPY[1:]:
         if i['metaedge'] == "CuG" and j['metaedge'] == "AdG" and i['target'] == j['target']:
-            if i['source'] in finalList:
+            if i['source'] in finalList or i['source'] in finalSimList:
                 continue
             else:
                 finalList.append(i['source'])
@@ -122,7 +122,7 @@ for i in compoundGeneCDG:
 for i in compoundGeneCDGCOPY[0:]:
     for j in compoundGeneCDGCOPY[1:]:
         if i['metaedge'] == "CdG" and j['metaedge'] == "AuG" and i['target'] == j['target']:
-            if i['source'] in finalList:
+            if i['source'] in finalList or i['source'] in finalSimList:
                 continue
             else:
                 finalList.append(i['source'])
